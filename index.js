@@ -1,7 +1,8 @@
 import { iaplc } from './data.js';
 
 const iaplcHtml = document.getElementById('iaplc-container');
-const currentYear = document.getElementById('current-year');
+
+export const currentYear = document.getElementById('current-year');
 
 if (currentYear) {
     currentYear.innerHTML= `
@@ -12,7 +13,7 @@ if (currentYear) {
     `
 }
 
-let visibleCount = 4;
+let visibleCount = 3;
 
 function renderItems() {
     if (!iaplcHtml) return;
@@ -42,7 +43,7 @@ function renderItems() {
     const loadMoreBtn = document.getElementById('load-more-btn');
     if (loadMoreBtn) {
         loadMoreBtn.addEventListener('click', () => {
-            visibleCount += 4;
+            visibleCount += 3;
             renderItems();
         });
     }
