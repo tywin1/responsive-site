@@ -13,7 +13,7 @@ h3 {
 }
 
 h1 {
-    color: #f5f7fa;
+    color: #d9c36d;
     font-size: 1.75rem;
 }
 
@@ -56,7 +56,7 @@ a {
     text-decoration: underline dotted; 
 }
 footer a {
-    color: #0a2f4d;
+    color: #edf5fb;
     text-decoration: underline dotted; 
 }
 
@@ -167,8 +167,8 @@ header,
 
 footer {
     text-align: center;
-    color: #0a2f4d;
-    background-color: #0496ff;
+    color: #edf5fb;
+    background-color: #0a2f4d;
 }
 .iaplc-title,
 .iaplc-name,
@@ -239,6 +239,39 @@ footer {
 #load-more-btn {
     min-width: 180px;
     margin: 0;
+    margin-bottom: 1em;
+}
+.info-text {
+    text-align: left;
+    margin: 0 auto 1em;
+    max-width: 640px;
+}
+.upper {
+    text-transform: uppercase;
+}   
+.info-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    max-width: 640px;
+    margin: 0 auto;
+    color: #edf5fb;
+    margin-top: 2em;
+    gap: 2em;
+
+}
+
+.info-card {
+    color: #edf5fb;
+    flex: 1 260px;
+    background: rgba(9, 33, 52, 0.78);
+    border: 1px solid rgba(81, 85, 89, 0.22);
+    border-radius: 8px;
+    padding: 1em;
+    box-sizing: border-box;
+}
+.info-card > h3 {
+    color: #d9c36d;
 }
 
 /* ----- NAVIGATION ----- */
@@ -267,10 +300,6 @@ ul {
     nav {
         margin-top: 1.5em;
     }
- 
-    li:not(:last-child) {
-        border-bottom: 1px dotted #a190b6;
-    }  
 
 }
 
